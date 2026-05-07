@@ -61,3 +61,43 @@ body {
 	border-radius: 20px;
 	text-shadow: 0 0 5px rgba(136, 146, 176, 0.5);
 }
+
+.nav {
+	background: rgba(15, 25, 45, 0.9);
+	padding: 25px;
+	border-radius: 20px;
+	border: 2px solid #00f5d4;
+	text-align: center;
+	box-shadow: 0 0 30px rgba(0, 245, 212, 0.2);
+}
+
+.nav-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-item {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.menu-link {
+	color: #00f5d4;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px 25px;
+	border-radius: 10px;
+	background: rgba(0, 245, 212, 0.1);
+	border: 1px solid rgba(0, 245, 212, 0.3);
+	text-shadow: 0 0 10px rgba(0, 245, 212, 0.7);
+}
+.world-section,
+.rules-section {
+	display: inline-block;
+	width: 47%;
+	background: rgba(20, 30, 50, 0.9);
+	padding: 30px;
+	margin: 10px 1%;
+	border: 1px solid rgba(100, 255, 218, 0.3);
+}
