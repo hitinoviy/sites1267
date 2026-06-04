@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 20px 40px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	font-family: 'Ysabeau', sans-serif;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 600;
+	color: #d63031;
+}
+.nav__list {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+}
+.nav__link {
+	text-decoration: none;
+	color: #555;
+	font-weight: 600;
+	font-size: 18px;
+	transition: 0.3s color;
+}
+.nav__link:hover {
+	color: #d63031;
+}
+
+.promo {
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.promo__content {
+	flex: 1;
+}
+.promo__title {
+	font-size: 48px;
+	color: #2d3436;
+	margin-bottom: 30px;
+}
+.promo__text {
+	font-size: 20px;
+	color: #636e72;
+	margin-bottom: 20px;
+	background-color: #f9f7f4;
+}
+.promo__image {
+	flex: 1;
+	background: #e0e0e0;
+	background-image: url('icons/promo.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
