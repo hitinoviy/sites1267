@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
-
+body {
+	background-color: #f9f7f4;
+}
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -47,6 +49,7 @@
 	margin: 0 auto;
 }
 .promo__content {
+	padding: 40px;
 	flex: 1;
 }
 .promo__title {
@@ -58,7 +61,6 @@
 	font-size: 20px;
 	color: #636e72;
 	margin-bottom: 20px;
-	background-color: #f9f7f4;
 }
 .promo__image {
 	flex: 1;
@@ -67,4 +69,85 @@
 	background-size: cover;
 	background-position: center;
 	height: 500px;
+}
+.promo_action {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.button {
+	padding: 15px 30px;
+	border: none;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s background-color;
+}
+.button-primary {
+	background-color: #d63031;
+	color: #fff;
+}
+.button-primary:hover {
+	background-color: #c0392b;
+}
+.promo__icon {
+	width: 48px;
+}
+.section {
+	max-width: 1200px;
+	width: 100%;
+	margin: 40px auto;
+	padding: 40px;
+}
+.section__title {
+	text-align: center;
+	color: #2d3436;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.card {
+	background-color: #fff;
+	padding: 30px 20px;
+	width: 30%;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.card_img {
+	height: 250px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.card_img-1 {
+	background-image: url('icons/set_1.webp');
+}
+.card_img-2 {
+	background-image: url('icons/set_2.png');
+}
+.card_img-3 {
+	background-image: url('icons/set_3.png');
+}
+.card_title {
+	font-size: 24px;
+	color: #2d3436;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+.card_subtitle {
+	color: #d63031;
+	margin-bottom: 15px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.card_text {
+	color: #636e72;
+	font-size: 14px;
 }
