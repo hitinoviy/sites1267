@@ -111,6 +111,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
+	flex-wrap: wrap;
 }
 .card {
 	background-color: #fff;
@@ -135,6 +136,15 @@ body {
 .card_img-3 {
 	background-image: url('icons/set_3.png');
 }
+.card_img-4 {
+	background-image: url('icons/set_4.png');
+}
+.card_img-5 {
+	background-image: url('icons/set_5.png');
+}
+.card_img-6 {
+	background-image: url('icons/set_6.png');
+}
 .card_title {
 	font-size: 24px;
 	color: #2d3436;
@@ -150,6 +160,22 @@ body {
 .card_text {
 	color: #636e72;
 	font-size: 14px;
+}
+.card__stats {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+	padding: 10px 0;
+	border-top: 1px solid #d63031;
+	border-bottom: 1px solid #d63031;
+}
+.stat {
+	font-size: 14px;
+	color: #636e72;
+	font-weight: 600;
+}
+.button-card {
+	width: 80%;
 }
 
 /* .div {
@@ -176,6 +202,42 @@ body {
 	height: 100px;
 	background: #d42baf;
 } */
+
+.advantages__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.advantages__card {
+	width: 250px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: 0.3s background;
+	gap: 15px;
+}
+.advantages__card:hover {
+	background: #ffeaa7;
+}
+.advantages_icon {
+	font-size: 40px;
+}
+.advantages_title {
+	font-size: 20px;
+	color: #2d3436;
+}
+.advantages__text {
+	color: #636e72;
+	font-size: 16px;
+}
 
 .footer {
 	display: flex;
