@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-	font-family: 'Ysabeau', sans-serif;
+	font-family: 'Ysabeau SC', sans-serif;
 	text-decoration: none;
 	font-size: 28px;
 	font-weight: 600;
@@ -239,6 +239,52 @@ body {
 	font-size: 16px;
 }
 
+.slogans {
+	max-width: 750px;
+	padding: 60px 40px;
+}
+.slogan__content {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+.slogan__left {
+	border-right: 3px solid #d63031;
+	padding-right: 20px;
+	flex: 1;
+	text-align: right;
+}
+.slogan__title {
+	font-size: 36px;
+	color: #2d3436;
+	margin-bottom: 10px;
+	font-family: 'Ysabeau SC', sans-serif;
+}
+.slogan__title .highlight {
+	font-family: 'Ysabeau SC', sans-serif;
+	color: #d63031;
+}
+.slogan__subtitle {
+	font-size: 24px;
+	color: #636e72;
+	font-weight: 600;
+}
+.slogan__right {
+	flex: 1;
+}
+.slogan__list {
+	list-style: none;
+	padding: 0;
+}
+.slogan__item {
+	font-size: 22px;
+	color: #2d3436;
+	margin-bottom: 15px;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -265,4 +311,34 @@ body {
 }
 .footer__link:hover {
 	color: #d63031;
+}
+
+@media (max-width: 780px) {
+	.cards {
+		flex-direction: column;
+	}
+	.card {
+		width: 100%;
+		max-width: 400px;
+	}
+	.slogan__content {
+		flex-direction: column;
+		gap: 25px;
+	}
+	.slogan__left {
+		text-align: center;
+		border-right: none;
+		border-bottom: 2px solid #d63031;
+		padding-right: 0;
+		padding-bottom: 15px;
+	}
+	.slogan__title {
+		font-size: 28px;
+	}
+	.slogan__subtitle {
+		font-size: 18px;
+	}
+	.slogan__list {
+		text-align: center;
+	}
 }
