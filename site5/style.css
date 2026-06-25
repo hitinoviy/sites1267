@@ -107,13 +107,34 @@ body {
 	margin-bottom: 50px;
 }
 
-.guarantees {
+.legend__content {
+	max-width: 800px;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 30px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+}
+
+.legend__text {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.legend__brand {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.guarantees,
+.legend {
 	background: #d63031;
 	color: #fff;
 	text-align: center;
 	padding: 60px 0;
 }
-.guarantees__title {
+.guarantees__title,
+.legend__title {
 	font-size: 32px;
 	font-family: 'Ysabeau SC', sans-serif;
 	margin-bottom: 20px;
@@ -201,22 +222,25 @@ body {
 	align-items: center; 
 	width: 1000px;
 	height: 500px;
-}
+} */
 
-.div1 {
+/* .div1 {
 	width: 100px;
 	height: 100px;
 	background: #b71111;
+	display: inline;
 }
 .div2 {
 	width: 100px;
 	height: 100px;
 	background: #386b14;
+	display: inline-block;
 }
 .div3 {
 	width: 100px;
 	height: 100px;
 	background: #d42baf;
+	display: block;
 } */
 
 .advantages__list {
@@ -330,13 +354,20 @@ body {
 }
 
 @media (max-width: 780px) {
-	.guarantees {
+	.legend__content {
+		padding: 20px;
+		margin: 0 20px;
+	}
+	.guarantees,
+	.legend {
 		padding: 40px 0;
 	}
-	.guarantees__title {
+	.guarantees__title,
+	.legend__title {
 		font-size: 24px;
 	}
-	.guarantees__text {
+	.guarantees__text,
+	.legend__text {
 		font-size: 16px;
 	}
 	.cards {
