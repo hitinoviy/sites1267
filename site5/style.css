@@ -106,6 +106,22 @@ body {
 	font-size: 36px;
 	margin-bottom: 50px;
 }
+
+.guarantees {
+	background: #d63031;
+	color: #fff;
+	text-align: center;
+	padding: 60px 0;
+}
+.guarantees__title {
+	font-size: 32px;
+	font-family: 'Ysabeau SC', sans-serif;
+	margin-bottom: 20px;
+}
+.guarantees__text {
+	font-size: 20px;
+}
+
 .cards {
 	display: flex;
 	justify-content: center;
@@ -314,6 +330,15 @@ body {
 }
 
 @media (max-width: 780px) {
+	.guarantees {
+		padding: 40px 0;
+	}
+	.guarantees__title {
+		font-size: 24px;
+	}
+	.guarantees__text {
+		font-size: 16px;
+	}
 	.cards {
 		flex-direction: column;
 	}
